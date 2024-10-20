@@ -31,6 +31,7 @@ async def chat_handler_task(message: Message, state: FSMContext):
                 ),
                 reply_markup=buttons.group_mail_success_admin(user_id)
             )
+            await message.reply(texts.MAIL_SEND_MESSAGE.format(message.from_user.first_name))
         except Exception as e:
             return
     # Boshqa xabarlar uchun javob bermaydi
@@ -44,7 +45,8 @@ async def new_member_handler_task(message: Message):
         username = new_user.username or new_user.full_name or "No username"
         # Yangi foydalanuvchiga xabar yuborish
         await message.reply(
-            texts.CHAT.format(username=username)
+            texts.CHAT.format(username=username),
+            reply_markup=buttons.BOT_SILKA
         )
 
 

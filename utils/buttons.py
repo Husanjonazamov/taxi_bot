@@ -196,3 +196,13 @@ def group_mail_success_user(user_id, taxi_id, current_taxi_id):
         keyboard.add(InlineKeyboardButton(text="❌ Po'chtani Bekor qilish", callback_data=f'group_mail_cancel_{user_id}_{taxi_id}'))
 
     return keyboard
+
+
+
+BOT_SILKA = InlineKeyboardMarkup(
+    inline_keyboard=[
+        [
+            InlineKeyboardButton(text="🤖 Botga kirish", url='https://t.me/testuchforbot')
+        ]
+    ]
+)

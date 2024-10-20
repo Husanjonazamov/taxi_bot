@@ -33,6 +33,11 @@ Iltimos telefon raqamingizni kiriting yoki pastdagi <b>📲 Telefon raqamni yubo
 """
 
 
+MAIL_SEND_MESSAGE = \
+"""
+{} Sizning Xabaringiz taxsilarga yuborildi tez orada siz bilan bog'lanishadi
+"""
+
 
 SUCCES_PESSERGER = \
 """
